@@ -34,7 +34,10 @@ class OffsetScroll extends React.Component {
   }
 
   render() {
-    return <div className='offset-scroll'
+    const cls = ['offset-scroll']
+    if(this.props.className)
+      cls.push(this.props.className)
+    return <div className={cls.join(' ')}
       style={{
         overflow: 'auto'
       }}
@@ -46,6 +49,7 @@ class OffsetScroll extends React.Component {
 }
 OffsetScroll.propTypes = {
   elementHeight: PropTypes.number.isRequired,
-  offset: PropTypes.number.isRequired
+  offset: PropTypes.number.isRequired,
+  className: PropTypes.string
 }
 export default OffsetScroll
