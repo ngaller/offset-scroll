@@ -5,7 +5,6 @@
   ],
   "license": "MIT",
   "main": "dist/index.js",
-  "jsnext:main": "src/index.js",
   "name": "offset-scroll",
   "repository": {
     "type": "git",
@@ -20,7 +19,7 @@
     "test": "mocha --require babel-register --require ignore-styles test/**/*.spec.js -r ./test/setup.js --recursive",
     "start": "budo example/index.js --css example/app.css --live -- -t [ babelify ]"
   },
-  "version": "1.0.1",
+  "version": "1.0.2",
   "peerDependencies": {
     "react": "^15.3.2",
     "prop-types": "^15.5.8"

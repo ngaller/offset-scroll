@@ -1,2 +1,2 @@
-import OffsetScroll from './OffsetScroll.jsx'
+import OffsetScroll from './OffsetScroll'
 export default OffsetScroll
